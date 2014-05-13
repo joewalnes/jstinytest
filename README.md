@@ -7,6 +7,9 @@ If you're looking for a JavaScript library full of features or install guides th
 
 If you're looking for a quick way to unit-test a JavaScript function/object in a web-page and don't want to get bogged down in frameworks, you've come to the right place. Take a seat... no scratch that, you'll have everything you need in a few seconds so you may as well remain standing.
 
+*   [Download tinytest.js](https://rawgit.com/joewalnes/jstinytest/master/tinytest.js)
+*   [Example](https://github.com/joewalnes/jstinytest/tree/master/example)
+
 10 second tutorial
 ------------------
 
@@ -46,6 +49,8 @@ Open the page in your browser. Green is good. Red is bad. If it's red, look in t
 ![](https://github.com/joewalnes/jstinytest/raw/master/screenshots/results-green.png)
 
 **That's it!**
+
+Don't believe me? Here's the [source](https://github.com/joewalnes/jstinytest/tree/master/example) and [result](https://rawgit.com/joewalnes/jstinytest/master/example/adder-test.html).
 
 What else?
 ==========
