@@ -43,6 +43,39 @@ Create a test page called `adder-test.html` (you can name it anything). This inc
 
 Open the page in your browser. Green is good. Red is bad. If it's red, look in the JavaScript console for messages.
 
+![](https://github.com/joewalnes/jstinytest/raw/master/screenshots/results-green.png)
+
 **That's it!**
+
+Moar MOARRR!
+============
+
+Well, there's not much more to it.
+
+If you open up the JavaScript console you'll see it ran the tests:
+
+![](https://github.com/joewalnes/jstinytest/raw/master/screenshots/results-green-console.png)
+
+If your tests fail, you'll get stack traces:
+
+![](https://github.com/joewalnes/jstinytest/raw/master/screenshots/results-red.png)
+
+Function reference
+------------------
+
+```javascript
+// Force a failure
+fail(reason);
+
+// Assert expression is truthy (fail with reason)
+assert(expression, reason);
+
+// Assert expected == actual
+assertEquals(expected, actual)
+
+// Assert expected === actual
+assertStrictEquals(expected, actual)
+```
+
 
 
