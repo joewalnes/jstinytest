@@ -21,12 +21,12 @@
  *     tests({
  *
  *       'adds numbers': function() {
- *         assertEquals(6, add(2, 4));
- *         assertEquals(6.6, add(2.6, 4));
+ *         eq(6, add(2, 4));
+ *         eq(6.6, add(2.6, 4));
  *       },
  *
  *       'subtracts numbers': function() {
- *         assertEquals(-2, add(2, -4));
+ *         eq(-2, add(2, -4));
  *       },
  *
  *     });
@@ -83,8 +83,9 @@ var TinyTest = {
 
 };
 
-var fail               = TinyTest.fail.bind(TinyTest);
-var assert             = TinyTest.assert.bind(TinyTest);
-var assertEquals       = TinyTest.assertEquals.bind(TinyTest);
-var assertStrictEquals = TinyTest.assertStrictEquals.bind(TinyTest);
-var tests              = TinyTest.run.bind(TinyTest);
+var fail               = TinyTest.fail.bind(TinyTest),
+    assert             = TinyTest.assert.bind(TinyTest),
+    assertEquals       = TinyTest.assertEquals.bind(TinyTest),
+    eq                 = TinyTest.assertEquals.bind(TinyTest), // alias for assertEquals
+    assertStrictEquals = TinyTest.assertStrictEquals.bind(TinyTest),
+    tests              = TinyTest.run.bind(TinyTest);

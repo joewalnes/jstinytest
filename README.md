@@ -29,12 +29,12 @@ Create a test page called `adder-test.html` (you can name it anything). This inc
  tests({
 
    'adds numbers': function() {
-     assertEquals(6, add(2, 4));
-     assertEquals(6.4, add(2.4, 4));
+     eq(6, add(2, 4));
+     eq(6.4, add(2.4, 4));
    },
 
    'subtracts numbers': function() {
-     assertEquals(-2, add(2, -4)); 
+     eq(-2, add(2, -4)); 
    },
 
  });
@@ -66,6 +66,7 @@ assert(expression, reason);
 
 // Assert expected == actual
 assertEquals(expected, actual)
+eq(expected, actual) // Alias for assertEquals
 
 // Assert expected === actual
 assertStrictEquals(expected, actual)
