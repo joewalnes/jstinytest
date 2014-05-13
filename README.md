@@ -13,7 +13,7 @@ If you're looking for a quick way to unit-test a JavaScript function/object in a
 10 second tutorial
 ------------------
 
-Download `tinytest.js` and put it somewhere in your web directory.
+Download [tinytest.js](https://rawgit.com/joewalnes/jstinytest/master/tinytest.js) and put it somewhere in your web directory.
 
 Let's say you have a function in `adder.js`:
 
@@ -78,3 +78,9 @@ assertStrictEquals(expected, actual)
 ```
 
 Errm that's it. Now stop wasting time - go test that function.
+
+But, but, but. What feature X?
+------------------------------
+
+It probably doesn't have it. If you need that, you'll probably find it in one of the many more sophisticated frameworks out there. A more detailed discussion can be found [here](http://www.pinterest.com/pin/61431982391077742/).
+
