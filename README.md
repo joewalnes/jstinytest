@@ -14,29 +14,32 @@ If you're looking for a quick way to unit-test a JavaScript function/object in a
 
 2. Let's say you have a function in `adder.js`:
 
-    function add(a, b) {
-      return a + b;
-    }
+```javascript
+function add(a, b) {
+  return a + b;
+}
+```
 
 3. Create a test page called `adder-test.html` (you can name it anything). This includes your code under test, tinytest.js and defines your tests:
 
-   <script src="tinytest.js"></script>
-   <script src="adder.js"></script>
-   <script>
-     tests({
+```html
+<script src="tinytest.js"></script>
+<script src="adder.js"></script>
+<script>
+ tests({
 
-       'adds numbers': function() {
-         assertEquals(6, add(2, 4));
-         assertEquals(6.4, add(2.4, 4));
-       },
+   'adds numbers': function() {
+     assertEquals(6, add(2, 4));
+     assertEquals(6.4, add(2.4, 4));
+   },
 
-       'subtracts numbers': function() {
-         assertEquals(-2, add(2, -4)); 
-       },
+   'subtracts numbers': function() {
+     assertEquals(-2, add(2, -4)); 
+   },
 
-     });
-   </script>
-
+ });
+</script>
+```
 4. Open the page in your browser. Green is good. Red is bad. If it's red, look in the JavaScript console for messages.
 
 That's it!
