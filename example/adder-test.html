@@ -1,0 +1,16 @@
+<script src="../tinytest.js"></script>
+<script src="adder.js"></script>
+<script>
+tests({
+
+  'adds numbers': function() {
+    assertEquals(6, add(2, 4));
+    assertEquals(6.6, add(2.6, 4));
+  },
+
+  'subtracts numbers': function() {
+    assertEquals(-2, add(2, -4));
+  },
+
+});
+</script>
