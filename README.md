@@ -10,9 +10,9 @@ If you're looking for a quick way to unit-test a JavaScript function/object in a
 10 second tutorial
 ------------------
 
-1. Download `tinytest.js` and put it somewhere in your web directory.
+Download `tinytest.js` and put it somewhere in your web directory.
 
-2. Let's say you have a function in `adder.js`:
+Let's say you have a function in `adder.js`:
 
 ```javascript
 function add(a, b) {
@@ -20,7 +20,7 @@ function add(a, b) {
 }
 ```
 
-3. Create a test page called `adder-test.html` (you can name it anything). This includes your code under test, tinytest.js and defines your tests:
+Create a test page called `adder-test.html` (you can name it anything). This includes your code under test, tinytest.js and defines your tests:
 
 ```html
 <script src="tinytest.js"></script>
@@ -40,8 +40,9 @@ function add(a, b) {
  });
 </script>
 ```
-4. Open the page in your browser. Green is good. Red is bad. If it's red, look in the JavaScript console for messages.
 
-That's it!
+Open the page in your browser. Green is good. Red is bad. If it's red, look in the JavaScript console for messages.
+
+**That's it!**
 
 
