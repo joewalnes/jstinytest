@@ -35,6 +35,7 @@
  * That's it. Stop using over complicated frameworks that get in your way.
  *
  * -Joe Walnes
+ * MIT License. See https://github.com/joewalnes/jstinytest/
  */
 var TinyTest = {
 
