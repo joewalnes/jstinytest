@@ -47,14 +47,8 @@ Open the page in your browser. Green is good. Red is bad. If it's red, look in t
 
 **That's it!**
 
-Moar MOARRR!
-============
-
-Well, there's not much more to it.
-
-If you open up the JavaScript console you'll see it ran the tests:
-
-![](https://github.com/joewalnes/jstinytest/raw/master/screenshots/results-green-console.png)
+What else?
+==========
 
 If your tests fail, you'll get stack traces:
 
@@ -77,5 +71,4 @@ assertEquals(expected, actual)
 assertStrictEquals(expected, actual)
 ```
 
-
-
+Errm that's it. Now stop wasting time - go test that function.
