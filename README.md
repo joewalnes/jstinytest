@@ -1,5 +1,5 @@
-Tiniest simplest JavaScript unit testing library
-================================================
+Tiniest JavaScript unit testing library
+=======================================
 
 This is an in-browser JavaScript library I've been using for years. It's so small and simple that it never occured to me to open source it until I saw all the overly complicated alternatives that are out there.
 
