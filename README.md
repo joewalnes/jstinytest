@@ -84,3 +84,14 @@ But, but, but. What feature about X?
 
 It probably doesn't have it. If you need that, you'll probably find it in one of the many more sophisticated frameworks out there. A more detailed discussion can be found [here](http://www.pinterest.com/pin/61431982391077742/).
 
+Projects using TinyTest
+-----------------------
+
+*   [Filtrex](https://github.com/joewalnes/filtrex) - A simple, safe, JavaScript Filter Expression compiler ([Tests](https://github.com/joewalnes/filtrex/blob/master/test/filtrex-test.html)) ([Results](https://rawgit.com/joewalnes/filtrex/master/test/filtrex-test.html))
+
+Other stuff
+-----------
+
+I also have [TinyTest for C](https://github.com/joewalnes/tinytest) that follows similar principles of simplicity.
+
+Now check out my other [GitHub projects](https://github.com/joewalnes) and follow [@joewalnes](https://twitter.com/joewalnes) on that Twitter thing.
