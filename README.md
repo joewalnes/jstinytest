@@ -79,7 +79,7 @@ assertStrictEquals(expected, actual)
 
 Errm that's it. Now stop wasting time - go test that function.
 
-But, but, but. What feature about X?
+But, but, but. What about feature X?
 ------------------------------------
 
 It probably doesn't have it. If you need that, you'll probably find it in one of the many more sophisticated frameworks out there. A more detailed discussion can be found [here](http://www.pinterest.com/pin/61431982391077742/).
