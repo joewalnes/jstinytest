@@ -51,7 +51,7 @@ var TinyTest = {
 
       return function(...msg) {
         logger(msg);
-        var txt = document.createTextNode(msg.join(" ") + "\n");
+        var txt = document.createTextNode(msg.join("\n") + "\n");
         pre.appendChild(txt);
       };
     },
