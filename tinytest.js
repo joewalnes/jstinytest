@@ -37,14 +37,14 @@
  * -Joe Walnes
  * MIT License. See https://github.com/joewalnes/jstinytest/
  */
-var TinyTest = {
+const TinyTest = {
 
     run: function(tests) {
-        var failures = 0;
-        for (var testName in tests) {
-            var testAction = tests[testName];
+        let failures = 0;
+        for (let testName in tests) {
+            let testAction = tests[testName];
             try {
-                testAction.apply(this);
+                testAction();
                 console.log('Test:', testName, 'OK');
             } catch (e) {
                 failures++;
@@ -83,9 +83,9 @@ var TinyTest = {
 
 };
 
-var fail               = TinyTest.fail.bind(TinyTest),
-    assert             = TinyTest.assert.bind(TinyTest),
-    assertEquals       = TinyTest.assertEquals.bind(TinyTest),
-    eq                 = TinyTest.assertEquals.bind(TinyTest), // alias for assertEquals
-    assertStrictEquals = TinyTest.assertStrictEquals.bind(TinyTest),
-    tests              = TinyTest.run.bind(TinyTest);
+const fail                = TinyTest.fail,
+      assert              = TinyTest.assert,
+      assertEquals        = TinyTest.assertEquals,
+      eq                  = TinyTest.assertEquals, // alias for assertEquals
+      assertStrictEquals  = TinyTest.assertStrictEquals,
+      tests               = TinyTest.run;
