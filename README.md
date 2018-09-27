@@ -13,7 +13,7 @@ If you're looking for a quick way to unit-test a JavaScript function/object in a
 10 second tutorial
 ------------------
 
-Download [tinytest.js](https://github.com/justinbourb/jstinytest_dom_edition/blob/master/tinytest_dom_edition.js) and put it somewhere in your web directory.
+Download [tinytest_dom_edition.js](https://github.com/justinbourb/jstinytest_dom_edition/blob/master/tinytest_dom_edition.js) and put it somewhere in your web directory.
 
 Let's say you have a function in `adder.js`:
 
