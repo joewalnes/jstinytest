@@ -9,84 +9,10 @@
       eq(6, add(2, 4));
       eq(6.6, add(2.6, 4));
     },
-    'adds numbers2': function() {
-      eq(6, add(2, 4));
-      eq(6.6, add(2.6, 4));
-    },
-    'adds numbers3': function() {
-      eq(6, add(2, 4));
-      eq(6.6, add(2.6, 4));
-    },
 
     'subtracts numbers': function() {
-      eq(-2, add(2, -4));
-    },
-    'subtracts numbers2': function() {
-      eq(-2, add(2, -4));
-    },
-    'subtracts numbers3': function() {
-      eq(-2, add(2, -4));
-    },
-    'adds numbers4': function() {
-      eq(6, add(2, 4));
-      eq(6.6, add(2.6, 4));
-    },
-    'adds numbers5': function() {
-      eq(6, add(2, 4));
-      eq(6.6, add(2.6, 4));
-    },
-    'adds numbers6': function() {
-      eq(6, add(2, 4));
-      eq(6.6, add(2.6, 4));
-    },
-
-    'subtracts numbers4': function() {
-      eq(-2, add(2, -4));
-    },
-    'subtracts numbers5': function() {
-      eq(-2, add(2, -4));
-    },
-    'subtracts numbers6': function() {
-      eq(-2, add(2, -4));
+      eq(-2, add(1, -4));
     },
 
   });
   </script>
-  <!--FIXME: move style into css or javascript template(?)-->
-  <!--FIXME: remove red or green borders if no passing or no failing tests-->
-  <style>
-#container{
-  width: 100%;
-  margin: 0;
-  padding: 0;
-
-}
-  #passingTestsDiv {
-
-      border: 2px solid green;
-      position: relative;
-      word-wrap:break-word;
-      display: flex;
-      flex-direction: column;
-  }
-
-  #failingTestsDiv {
-
-      border: 2px solid red;
-      position: relative;
-      word-wrap:break-word;
-      display: flex;
-      flex-direction: column;
-  }
-
-  </style>
-  <!--FIXME:move html into javascript template
-  to make tinytest easy to use! user just needs to add scripts, not html!-->
-
-  <body>
-    <div id="container">
-      <div id="passingTestsDiv"></div>
-      <div id="failingTestsDiv"></div>
-    </div>
-  </body>
-</html>

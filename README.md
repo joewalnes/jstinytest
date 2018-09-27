@@ -1,7 +1,7 @@
 Tiniest JavaScript unit testing library
 =======================================
 
-This is an in-browser JavaScript library I've been using for years. It's so small and simple that it never occured to me to open source it until I saw all the overly complicated alternatives that are out there.
+This is an in-browser JavaScript library I've been using for years. It's so small and simple that it never occurred to me to open source it until I saw all the overly complicated alternatives that are out there.
 
 If you're looking for a JavaScript library full of features or install guides that say things like `grunt`, `npm` or `bower`, you've come to the wrong place. Sorry, this probably isn't for you. Move along now.
 
@@ -37,14 +37,14 @@ Create a test page called `adder-test.html` (you can name it anything). This inc
    },
 
    'subtracts numbers': function() {
-     eq(-2, add(2, -4)); 
+     eq(-2, add(2, -4));
    },
 
  });
 </script>
 ```
 
-Open the page in your browser. Green is good. Red is bad. If it's red, look in the JavaScript console for messages.
+Open the page in your browser. Green is good. Red is bad. With jstinytest_dom_edition there's no need to look in the JavaScript console for messages, because pressing ctrl+shift+j is just too much work.
 
 ![](https://github.com/joewalnes/jstinytest/raw/master/screenshots/results-green.png)
 
@@ -71,10 +71,10 @@ assert(expression, reason);
 
 // Assert expected == actual
 assertEquals(expected, actual)
-eq(expected, actual) // Alias for assertEquals
 
 // Assert expected === actual
 assertStrictEquals(expected, actual)
+eq(expected, actual) // Alias for assertStrictEquals
 ```
 
 Errm that's it. Now stop wasting time - go test that function.
@@ -91,7 +91,7 @@ Projects using TinyTest
 
 Other stuff
 -----------
+Joe Walnes (jstinytest)
+Joe also has [TinyTest for C](https://github.com/joewalnes/tinytest) that follows similar principles of simplicity.
 
-I also have [TinyTest for C](https://github.com/joewalnes/tinytest) that follows similar principles of simplicity.
-
-Now check out my other [GitHub projects](https://github.com/joewalnes) and follow [@joewalnes](https://twitter.com/joewalnes) on that Twitter thing.
+Check out Joe's other [GitHub projects](https://github.com/joewalnes) and follow [@joewalnes](https://twitter.com/joewalnes) on that Twitter thing.
