@@ -15,12 +15,12 @@
  *
  *   adder-test.html (tests - just open a browser to see results)
  *
- *     <script src="tinytest.js"></script>
+ *     <script src="jstinytest_dom_edition.js"></script>
  *     <script src="adder.js"></script>
  *     <script>
  *    /*tests calls TinyTest.run
  *     *@params takes an object of tests
- *     *individual tests then call eq which tests against strict assertEquals
+ *     *individual tests then call eq which tests against assertStrictEquals
  *    /*
  *     tests({
  *
@@ -39,11 +39,11 @@
  *
  * That's it. Stop using over complicated frameworks that get in your way.
  *
+ * -Justin Bourbonniere (jstintytest_modified)
+ * MIT Liccense. See https://github.com/justinbourb/jstinytest_dom_edition
+ *
  * -Joe Walnes (jstinytest)
  * MIT License. See https://github.com/joewalnes/jstinytest/
- *
- * -Justin Bourbonniere (jstintytest_modified)
- * TODO: add github link
  */
 var TinyTest = {
 
