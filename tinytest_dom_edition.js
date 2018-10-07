@@ -86,7 +86,7 @@ var TinyTest = {
           }
                 //print total passing and total failues to top of screen (h3 element)
                 document.getElementById('results').innerHTML='Passing Tests: '+
-                passing+'&nbsp&nbsp&nbsp&nbsp&nbsp||&nbsp&nbsp&nbsp&nbsp&nbsp Failing Test: '+
+                passing+'&nbsp&nbsp&nbsp&nbsp&nbsp||&nbsp&nbsp&nbsp&nbsp&nbsp Failing Tests: '+
                 failures;
                 //change background color as needed
                 if (failures === 0){
