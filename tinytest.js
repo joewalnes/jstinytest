@@ -2,8 +2,7 @@
  * Very simple in-browser unit-test library, with zero deps.
  *
  * Background turns green if all tests pass, otherwise red.
- * Results appear in the DOM or you can view the JavaScript
- * console if you prefer.
+ * View the JavaScript console to see failure reasons.
  *
  * Example:
  *
@@ -15,13 +14,10 @@
  *
  *   adder-test.html (tests - just open a browser to see results)
  *
- *     <script src="jstinytest_dom_edition.js"></script>
+ *     <script src="tinytest.js"></script>
  *     <script src="adder.js"></script>
  *     <script>
- *    /*tests calls TinyTest.run
- *     *@params takes an object of tests
- *     *individual tests then call eq which tests against assertStrictEquals
- *    /*
+ *
  *     tests({
  *
  *       'adds numbers': function() {
@@ -36,16 +32,12 @@
  *     });
  *     </script>
  *
- *
  * That's it. Stop using over complicated frameworks that get in your way.
  *
- * -Justin Bourbonniere (jstintytest_modified)
- * MIT Liccense. See https://github.com/justinbourb/jstinytest_dom_edition
- *
- * -Joe Walnes (jstinytest)
+ * -Joe Walnes
  * MIT License. See https://github.com/joewalnes/jstinytest/
  */
-var TinyTest = {
+const TinyTest = {
 
 
     run: function(tests) {
@@ -57,16 +49,15 @@ var TinyTest = {
             // define variables
             failingTestsDiv = document.getElementById('failingTestsDiv');
             passingTestsDiv = document.getElementById('passingTestsDiv');
-            var failures = 0;
-            var passing = 0;
+            let failures = 0;
+            let passing = 0;
             //run tests and print results
-            for (var testName in tests) {
+            for (let testName in tests) {
                 //testAction calls individual tests in html file provided by user
-                var testAction = tests[testName];
+                let testAction = tests[testName];
                 try {
-                    //applies this = TinyTest
-                    testAction.apply(this);
-                    console.log('Test passed:', testName);
+                    testAction();
+                    console.log('Test:', testName, 'OK');
                     //prints passing test to DOM
                     passingTestsDiv.innerHTML+='<ul>'+'Test passed: '+
                       testName+'</ul>';
@@ -74,6 +65,7 @@ var TinyTest = {
                   //if testAction throws an error (test fails)
                 } catch (e) {
                     failures++;
+                    console.error('Test:', testName, 'FAILED', e);
                     console.error(e.stack);
                     /*formats Test and Error onto their own lines
                      *and prints it in the DOM
@@ -181,10 +173,11 @@ var TinyTest = {
 
 };
 
-var fail               = TinyTest.fail.bind(TinyTest);
-var assert             = TinyTest.assert.bind(TinyTest);
-var assertEquals       = TinyTest.assertEquals.bind(TinyTest);
-var eq                 = TinyTest.assertStrictEquals.bind(TinyTest);
-var tests              = TinyTest.run.bind(TinyTest);
-var failingTestsDiv;
-var passingTestsDiv;
+const fail                = TinyTest.fail,
+      assert              = TinyTest.assert,
+      assertEquals        = TinyTest.assertEquals,
+      eq                  = TinyTest.assertEquals, // alias for assertEquals
+      assertStrictEquals  = TinyTest.assertStrictEquals,
+      tests               = TinyTest.run,
+      failingTestsDiv,
+      passingTestsDiv;
