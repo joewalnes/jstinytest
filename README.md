@@ -46,18 +46,18 @@ Create a test page called `adder-test.html` (you can name it anything). This inc
 
 Open the page in your browser. Green is good. Red is bad. Test output is available in the console or browser window, because pressing ctrl+shift+j is just too much work.
 
-![](https://github.com/justinbourb/jstinytest_dom_edition/blob/master/screenshots/results-green.png)
+![](https://github.com/joewalnes/jstinytest/raw/master/screenshots/results-green.png)
 
 **That's it!**
 
-Don't believe me? Here's the [source](https://github.com/justinbourb/jstinytest_dom_edition/tree/master/example) and [result](https://raw.githubusercontent.com/justinbourb/jstinytest_dom_edition/master/example/adder-test.html).
+Don't believe me? Here's the [source](https://github.com/joewalnes/jstinytest/tree/master/example) and [result](https://rawgit.com/joewalnes/jstinytest/master/example/adder-test.html).
 
 What else?
 ==========
 
 If your tests fail, you'll get stack traces:
 
-![](https://github.com/justinbourb/jstinytest_dom_edition/blob/master/screenshots/results-red.png)
+![](https://github.com/joewalnes/jstinytest/raw/master/screenshots/results-red.png)
 
 Function reference
 ------------------
@@ -71,10 +71,10 @@ assert(expression, reason);
 
 // Assert expected == actual
 assertEquals(expected, actual)
+eq(expected, actual) // Alias for assertEquals
 
 // Assert expected === actual
 assertStrictEquals(expected, actual)
-eq(expected, actual) // Alias for assertStrictEquals
 ```
 
 Errm that's it. Now stop wasting time - go test that function.
@@ -82,13 +82,12 @@ Errm that's it. Now stop wasting time - go test that function.
 But, but, but. What about feature X?
 ------------------------------------
 
-It probably doesn't have it. If you need that, you'll probably find it in one of the many more sophisticated frameworks out there.
+It probably doesn't have it. If you need that, you'll probably find it in one of the many more sophisticated frameworks out there. A more detailed discussion can be found [here](http://www.pinterest.com/pin/61431982391077742/).
 
 Projects using TinyTest
 -----------------------
 
 *   [Filtrex](https://github.com/joewalnes/filtrex) - A simple, safe, JavaScript Filter Expression compiler ([Tests](https://github.com/joewalnes/filtrex/blob/master/test/filtrex-test.html)) ([Results](https://rawgit.com/joewalnes/filtrex/master/test/filtrex-test.html))
-
 
 Other stuff
 -----------
@@ -96,4 +95,3 @@ Other stuff
 I also have [TinyTest for C](https://github.com/joewalnes/tinytest) that follows similar principles of simplicity.
 
 Now check out my other [GitHub projects](https://github.com/joewalnes) and follow [@joewalnes](https://twitter.com/joewalnes) on that Twitter thing.
-
