@@ -44,7 +44,7 @@ Create a test page called `adder-test.html` (you can name it anything). This inc
 </script>
 ```
 
-Open the page in your browser. Green is good. Red is bad. If it's red, look in the JavaScript console for messages.
+Open the page in your browser. Green is good. Red is bad. Test output is available in the console or browser window, because pressing ctrl+shift+j is just too much work.
 
 ![](https://github.com/joewalnes/jstinytest/raw/master/screenshots/results-green.png)
 

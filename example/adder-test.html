@@ -1,16 +1,17 @@
-<script src="../tinytest.js"></script>
-<script src="adder.js"></script>
-<script>
-tests({
 
-  'adds numbers': function() {
-    eq(6, add(2, 4));
-    eq(6.6, add(2.6, 4));
-  },
+  <script src="../tinytest.js"></script>
+  <script src="adder.js"></script>
+  <script>
+  tests({
 
-  'subtracts numbers': function() {
-    eq(-2, add(2, -4));
-  },
+    'adds numbers': function() {
+      eq(6, add(2, 4));
+      eq(6.6, add(2.6, 4));
+    },
 
-});
-</script>
+    'subtracts numbers': function() {
+      eq(-2, add(1, -4));
+    },
+
+  });
+  </script>
