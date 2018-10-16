@@ -47,8 +47,8 @@ const TinyTest = {
           // Give document a chance to complete
           if (window.document && document.body) {
             // define variables
-            failingTestsDiv = document.getElementById('failingTestsDiv');
-            passingTestsDiv = document.getElementById('passingTestsDiv');
+            let failingTestsDiv = document.getElementById('failingTestsDiv');
+            let passingTestsDiv = document.getElementById('passingTestsDiv');
             let failures = 0;
             let passing = 0;
             //run tests and print results
@@ -178,6 +178,4 @@ const fail                = TinyTest.fail,
       assertEquals        = TinyTest.assertEquals,
       eq                  = TinyTest.assertEquals, // alias for assertEquals
       assertStrictEquals  = TinyTest.assertStrictEquals,
-      tests               = TinyTest.run,
-      failingTestsDiv,
-      passingTestsDiv;
+      tests               = TinyTest.run;
