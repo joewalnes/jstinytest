@@ -39,7 +39,6 @@
  */
 const TinyTest = {
 
-
     run: function(tests) {
       //add html to test file
         TinyTest.createHTML();
