@@ -1,19 +1,19 @@
-tinytest_dom_edition JavaScript unit testing library
+Tiniest JavaScript unit testing library
 =======================================
 
-This is an in-browser JavaScript library I've been using for years. It's so small and simple that it never occurred to me to open source it until I saw all the overly complicated alternatives that are out there.
+This is an in-browser JavaScript library I've been using for years. It's so small and simple that it never occured to me to open source it until I saw all the overly complicated alternatives that are out there.
 
 If you're looking for a JavaScript library full of features or install guides that say things like `grunt`, `npm` or `bower`, you've come to the wrong place. Sorry, this probably isn't for you. Move along now.
 
 If you're looking for a quick way to unit-test a JavaScript function/object in a web-page and don't want to get bogged down in frameworks, you've come to the right place. Take a seat... no scratch that, you'll have everything you need in a few seconds so you may as well remain standing.
 
-*   [Download tinytest_dom_edition.js](https://github.com/justinbourb/jstinytest_dom_edition/blob/master/tinytest_dom_edition.js)
-*   [Example](https://github.com/justinbourb/jstinytest_dom_edition/tree/master/example)
+*   [Download tinytest.js](https://rawgit.com/joewalnes/jstinytest/master/tinytest.js)
+*   [Example](https://github.com/joewalnes/jstinytest/tree/master/example)
 
 10 second tutorial
 ------------------
 
-Download [tinytest_dom_edition.js](https://github.com/justinbourb/jstinytest_dom_edition/blob/master/tinytest_dom_edition.js) and put it somewhere in your web directory.
+Download [tinytest.js](https://rawgit.com/joewalnes/jstinytest/master/tinytest.js) and put it somewhere in your web directory.
 
 Let's say you have a function in `adder.js`:
 
@@ -23,10 +23,10 @@ function add(a, b) {
 }
 ```
 
-Create a test page called `adder-test.html` (you can name it anything). This includes your code under test, tinytest_dom_edition.js and defines your tests:
+Create a test page called `adder-test.html` (you can name it anything). This includes your code under test, tinytest.js and defines your tests:
 
 ```html
-<script src="tinytest_dom_edition.js"></script>
+<script src="tinytest.js"></script>
 <script src="adder.js"></script>
 <script>
  tests({
@@ -37,14 +37,14 @@ Create a test page called `adder-test.html` (you can name it anything). This inc
    },
 
    'subtracts numbers': function() {
-     eq(-2, add(2, -4));
+     eq(-2, add(2, -4)); 
    },
 
  });
 </script>
 ```
 
-Open the page in your browser. Green is good. Red is bad. With jstinytest_dom_edition there's no need to look in the JavaScript console for messages, because pressing ctrl+shift+j is just too much work.
+Open the page in your browser. Green is good. Red is bad. Test output is available in the console or browser window, because pressing ctrl+shift+j is just too much work.
 
 ![](https://github.com/justinbourb/jstinytest_dom_edition/blob/master/screenshots/results-green.png)
 
@@ -89,12 +89,11 @@ Projects using TinyTest
 
 *   [Filtrex](https://github.com/joewalnes/filtrex) - A simple, safe, JavaScript Filter Expression compiler ([Tests](https://github.com/joewalnes/filtrex/blob/master/test/filtrex-test.html)) ([Results](https://rawgit.com/joewalnes/filtrex/master/test/filtrex-test.html))
 
+
 Other stuff
 -----------
-Justin Bourbonniere (jstinytest_dom_edition)
-Check out Justin's other [GitHub projects](https://github.com/justinbourb).
 
-Joe Walnes (jstinytest)
-Joe also has [TinyTest for C](https://github.com/joewalnes/tinytest) that follows similar principles of simplicity.
+I also have [TinyTest for C](https://github.com/joewalnes/tinytest) that follows similar principles of simplicity.
 
-Check out Joe's other [GitHub projects](https://github.com/joewalnes) and follow [@joewalnes](https://twitter.com/joewalnes) on that Twitter thing.
+Now check out my other [GitHub projects](https://github.com/joewalnes) and follow [@joewalnes](https://twitter.com/joewalnes) on that Twitter thing.
+
