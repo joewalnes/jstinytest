@@ -14,16 +14,29 @@ const TinyTest = {
 
     run: function(tests) {
         let failures = 0;
+        var passed = 0;
         for (let testName in tests) {
             let testAction = tests[testName];
             try {
                 testAction();
                 console.log('Test:', testName, 'OK');
+                passed++; 
             } catch (e) {
                 failures++;
                 console.error('Test:', testName, 'FAILED', e);
                 console.error(e.stack);
             }
+        }
+        var total = failures + passed;
+        if (failures) {
+            console.error(
+                `Tests: ${failures} failed, ${passed} passed, ${total} total`
+            );
+        }
+        else {
+            console.log(
+                `Tests: ${passed} passed, ${total} total`
+            );
         }
         setTimeout(function() { // Give document a chance to complete
         if (isBrowser() ) {

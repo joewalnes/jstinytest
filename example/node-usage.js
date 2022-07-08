@@ -1,3 +1,4 @@
+// Usage example for writing tinyjs unit tests in node modules
 "use strict";
 
 var {
