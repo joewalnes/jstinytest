@@ -37,6 +37,7 @@
  * -Joe Walnes
  * MIT License. See https://github.com/joewalnes/jstinytest/
  */
+"use strict";
 const TinyTest = {
 
     run: function(tests) {
@@ -71,13 +72,13 @@ const TinyTest = {
 
     assertEquals: function(expected, actual) {
         if (expected != actual) {
-            throw new Error('assertEquals() "' + expected + '" != "' + actual + '"');
+            throw new Error(`assertEquals() "${expected}" != "${actual}"`);
         }
     },
 
     assertStrictEquals: function(expected, actual) {
         if (expected !== actual) {
-            throw new Error('assertStrictEquals() "' + expected + '" !== "' + actual + '"');
+            throw new Error(`assertStrictEquals() "${expected}" !== "${actual}"`);
         }
     },
 
