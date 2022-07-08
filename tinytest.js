@@ -4,34 +4,6 @@
  * Background turns green if all tests pass, otherwise red.
  * View the JavaScript console to see failure reasons.
  *
- * Example:
- *
- *   adder.js (code under test)
- *
- *     function add(a, b) {
- *       return a + b;
- *     }
- *
- *   adder-test.html (tests - just open a browser to see results)
- *
- *     <script src="tinytest.js"></script>
- *     <script src="adder.js"></script>
- *     <script>
- *
- *     tests({
- *
- *       'adds numbers': function() {
- *         eq(6, add(2, 4));
- *         eq(6.6, add(2.6, 4));
- *       },
- *
- *       'subtracts numbers': function() {
- *         eq(-2, add(2, -4));
- *       },
- *
- *     });
- *     </script>
- *
  * That's it. Stop using over complicated frameworks that get in your way.
  *
  * -Joe Walnes
@@ -54,9 +26,11 @@ const TinyTest = {
             }
         }
         setTimeout(function() { // Give document a chance to complete
-            if (window.document && document.body) {
+        if (isBrowser() ) {
+            if (typeof window.document && document.body) {
                 document.body.style.backgroundColor = (failures == 0 ? '#99ff99' : '#ff9999');
             }
+        }
         }, 0);
     },
 
@@ -84,9 +58,23 @@ const TinyTest = {
 
 };
 
+function isNode() {
+    return typeof window === "undefined";
+}
+
+function isBrowser() {
+    return !isNode();
+}
+
 const fail                = TinyTest.fail,
       assert              = TinyTest.assert,
       assertEquals        = TinyTest.assertEquals,
       eq                  = TinyTest.assertEquals, // alias for assertEquals
       assertStrictEquals  = TinyTest.assertStrictEquals,
       tests               = TinyTest.run;
+
+if (isNode() ) {
+    module.exports = { 
+        fail, assert, assertEquals, eq, assertStrictEquals, run : tests
+    };
+}

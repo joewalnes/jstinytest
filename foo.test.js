@@ -1,0 +1,14 @@
+"use strict";
+
+var {
+    fail, assert, assertEquals, assertStrictEquals, tests 
+    } = require("./tinytests.js");
+
+var expected = 42;
+var actual = 40;
+
+tests({
+    "foobar" : function foo() {
+        assertEquals(expected, actual);
+    }
+});
