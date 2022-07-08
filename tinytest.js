@@ -1,14 +1,26 @@
 /**
- * Very simple in-browser unit-test library, with zero deps.
+ * The MIT License (MIT)
  *
- * Background turns green if all tests pass, otherwise red.
- * View the JavaScript console to see failure reasons.
+ * Copyright (c) 2008-2014 Joe Walnes
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
  *
- * That's it. Stop using over complicated frameworks that get in your way.
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
  *
- * -Joe Walnes
- * MIT License. See https://github.com/joewalnes/jstinytest/
- */
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*/
 "use strict";
 const TinyTest = {
 
@@ -40,7 +52,7 @@ const TinyTest = {
         }
         setTimeout(function() { // Give document a chance to complete
         if (isBrowser() ) {
-            if (typeof window.document && document.body) {
+            if (window.document && document.body) {
                 document.body.style.backgroundColor = (failures == 0 ? '#99ff99' : '#ff9999');
             }
         }
