@@ -75,6 +75,6 @@ const fail                = TinyTest.fail,
 
 if (isNode() ) {
     module.exports = { 
-        fail, assert, assertEquals, eq, assertStrictEquals, run : tests
+        fail, assert, assertEquals, eq, assertStrictEquals, tests
     };
 }

@@ -2,7 +2,7 @@
 
 var {
     fail, assert, assertEquals, assertStrictEquals, tests 
-    } = require("./tinytests.js");
+    } = require("../tinytest.js");
 
 var expected = 42;
 var actual = 40;
