@@ -1,7 +1,7 @@
 {
   "name": "jstinytest",
   "version": "1.0.0",
-  "description": "Tiny JS unit testinb library",
+  "description": "Tiny JS unit testing library",
   "main": "tinytest.js",
   "directories": {
     "example": "example"
