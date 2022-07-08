@@ -1,0 +1,22 @@
+{
+  "name": "jstinytest",
+  "version": "1.0.0",
+  "description": "Tiny JS unit testinb library",
+  "main": "tinytest.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ullenius/jstinytest.git"
+  },
+  "author": "Joe Walnes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ullenius/jstinytest/issues"
+  },
+  "homepage": "https://github.com/ullenius/jstinytest#readme"
+}
