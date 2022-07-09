@@ -3,13 +3,12 @@
 
 var {
     fail, assert, assertEquals, assertStrictEquals, tests 
-    } = require("../tinytest.js");
-
-var expected = 42;
-var actual = 40;
+} = require("../tinytest.js");
 
 tests({
     "foobar" : function foo() {
+        var expected = 42;
+        var actual = 21 * 2;
         assertEquals(expected, actual);
     }
 });
