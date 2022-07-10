@@ -1,8 +1,8 @@
 {
-  "name": "jstinytest",
-  "version": "1.0.0",
-  "description": "Tiny JS unit testing library",
-  "main": "tinytest.js",
+  "name": "jspunytest",
+  "version": "1.1.0",
+  "description": "Puny JS unit testing library",
+  "main": "punytest.js",
   "directories": {
     "example": "example"
   },
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ullenius/jstinytest.git"
+    "url": "git+https://github.com/ullenius/jspunytest.git"
   },
-  "author": "Joe Walnes",
+  "author": "A. Ullenius",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ullenius/jstinytest/issues"
+    "url": "https://github.com/ullenius/jspunytest/issues"
   },
-  "homepage": "https://github.com/ullenius/jstinytest#readme"
+  "homepage": "https://github.com/ullenius/jspunytest#readme"
 }
